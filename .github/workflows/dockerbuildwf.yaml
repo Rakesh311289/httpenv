@@ -232,3 +232,7 @@ jobs:
           image-ref: 8867741869/httpenv:${{ github.run_id }}
           exit-code: 0
           format: table
+      - name: Test healthcheck in Docker Compose
+        run: |
+          export TESTING_IMAGE="8867741869/httpenv:${{ github.run_id }}"
+          docker compose -f docker-compose.test.yml up --exit-code-from sut
