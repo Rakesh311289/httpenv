@@ -50,8 +50,7 @@ jobs:
       ### defaults to:
       image-names: |
         8867741869/httpenv
-        # ghcr.io/${{ github.repository }}
-
+      #ghcr.io/${{ github.repository }}
       ### set rules for tagging images, based on special action syntax:
       ### https://github.com/docker/metadata-action#tags-input
       ### defaults to:
