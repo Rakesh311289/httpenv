@@ -229,6 +229,6 @@ jobs:
       - name: Run Trivy for all CVEs (non-blocking)
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ${{ inputs.image-names }}:${{ github.run_id }}
+          image-ref: 8867741869/httpenv:${{ github.run_id }}
           exit-code: 0
           format: table
